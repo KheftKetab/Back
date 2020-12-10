@@ -51,5 +51,4 @@ class AccountSerializer(serializers.ModelSerializer):
 
         account = Account.objects.create(user=user, **validated_data)
         account.save()
-        print(account)
         return account
