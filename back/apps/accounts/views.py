@@ -18,6 +18,9 @@ class AccountViewSet(viewsets.ModelViewSet):
             self.permission_classes = [permissions.IsAdminUser]
 
         elif self.action in ['retrieve', 'update']:
-            self.permission_classes = [permissions.IsAdminUser, IsCurrentUser]
+            self.permission_classes = [permissions.IsAdminUser or IsCurrentUser]
+
+        elif self.action == 'destroy':
+            self.permission_classes = [permissions.IsAdminUser]
 
         return super(AccountViewSet, self).get_permissions()
