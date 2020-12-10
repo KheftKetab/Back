@@ -1,0 +1,37 @@
+{
+	"variables": [],
+	"info": {
+		"name": "KheftKetab",
+		"_postman_id": "219adccf-0578-2142-cf6f-04aaa82cb6d6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"description": "",
+			"item": [
+				{
+					"name": "create user",
+					"request": {
+						"url": "localhost:8000/users/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\": {\n\t\t\"username\": \"AliAkbarGhayouri\",\n\t\t\"password\": \"PouryaPourSorkh\",\n\t\t\"first_name\": \"Ali Akbar\",\n\t\t\"last_name\": \"Ghayouri\",\n\t\t\"email\": \"ghayoory@gmail.com\"\n\t},\n\t\"university\": \"Sharif University of Technology\",\n\t\"phone_no\": \"09127714584\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
