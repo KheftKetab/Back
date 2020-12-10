@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-from back.apps.accounts.models import Account
+from apps.accounts.models import Account
 
 
 class Book(models.Model):
