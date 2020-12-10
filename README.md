@@ -1,8 +1,7 @@
 # KheftKetab Sample Project
 
-Sample project to test and learn `django-rest-framework` and test it. As expected it'll be an open-source project to
- help others join and contribute to add features.
- 
+An open-source project to test and learn `django-rest-framework`.
+
  ## How to run.
  
  - Make sure that you have installed `python` programming language and `virtualenv` package, using the following commands:
